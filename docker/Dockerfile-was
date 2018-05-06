@@ -1,0 +1,9 @@
+FROM golang:1.10
+
+RUN curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+
+RUN mkdir -p /go/src/app
+WORKDIR /go/src/app
+ADD . .
+
+CMD ["sh", "-c", "tail -f /dev/null"]
