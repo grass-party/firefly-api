@@ -6,6 +6,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile-was
+    ports:
+      - '1323:1323'
     depends_on:
       - db
     links:
