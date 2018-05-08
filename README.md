@@ -1,12 +1,11 @@
 # Firefly API
 
-firefly 서비스의 REST API 서버입니다.
+firefly의 REST API 서버입니다.
 
 # 사용 기술
 
-- Python 3
-- Django 2
-- Zappa
+- Golang 1.10
+- Echo 3
 - AWS Aurora (MySQL)
 - Docker
 
