@@ -5,7 +5,7 @@ services:
     container_name: firefly-was
     build:
       context: .
-      dockerfile: Dockerfile-was
+      dockerfile: Dockerfile-dev
     ports:
       - '1323:1323'
     depends_on:
