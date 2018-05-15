@@ -13,7 +13,7 @@ services:
     links:
       - db:mysql
     volumes:
-      - ..:/go/src/app
+      - .:/go/src/app
 
   db:
     container_name: firefly-db
