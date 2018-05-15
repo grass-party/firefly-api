@@ -7,4 +7,4 @@ WORKDIR /go/src/app
 
 EXPOSE 1323
 
-CMD ["go", "run", "server.go"]
+CMD ["go", "run", "main.go"]

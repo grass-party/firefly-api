@@ -1,7 +1,7 @@
 FROM scratch
 
-Add server /
+Add main /
 
 EXPOSE 1323
 
-CMD ["/server"]
+CMD ["/main"]
