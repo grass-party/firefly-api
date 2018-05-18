@@ -9,20 +9,20 @@ services:
     ports:
       - '1323:1323'
     depends_on:
-      - db
+      - rdb
     links:
-      - db:mysql
+      - rdb:rdb
     volumes:
       - .:/go/src/app
 
-  db:
+  rdb:
     container_name: firefly-db
     image: mysql:8
     command: --character-set-server=utf8
     volumes:
-      - ../mysql:/var/lib/mysql
+      - ./mysql:/var/lib/mysql
     ports:
-      - '43306:3306'
+      - '43316:3306'
     environment:
       - MYSQL_DATABASE=firefly
       - MYSQL_USER=fireflylocal
