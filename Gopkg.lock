@@ -2,8 +2,17 @@
 
 
 [[projects]]
-  name = "github.com/jinzhu/gorm"
+  name = "github.com/go-sql-driver/mysql"
   packages = ["."]
+  revision = "a0583e0143b1624142adab07e0e97fe106d99561"
+  version = "v1.3"
+
+[[projects]]
+  name = "github.com/jinzhu/gorm"
+  packages = [
+    ".",
+    "dialects/mysql"
+  ]
   revision = "6ed508ec6a4ecb3531899a69cbc746ccf65a4166"
   version = "v1.9.1"
 
@@ -70,6 +79,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "fa6419e5e5c55d90fd7e52221f23a1aadd72808f131cb0290aa65c13bcf87a70"
+  inputs-digest = "4385af4fa8ff89844276b5a851dd7b90a0716368b5a434a21d115d0f604f55d6"
   solver-name = "gps-cdcl"
   solver-version = 1
